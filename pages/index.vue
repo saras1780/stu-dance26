@@ -5,7 +5,7 @@
         <section class="text-center py-12">
             <h1 class="text-4xl font-bold mb-4">Bienvenue chez Stu'dance 26</h1>
             <p class="text-lg mb-8">Découvrez une école de danse qui valorise passion, engagement et créativité.</p>
-            <NuxtLink to="/about" class="bg-[#592F83] text-white py-3 px-8 rounded-lg hover:bg-[#391B49] transition">
+            <NuxtLink to="/apropos" class="bg-[#592F83] text-white py-3 px-8 rounded-lg hover:bg-[#391B49] transition">
                 En savoir plus sur nous
             </NuxtLink>
         </section>
