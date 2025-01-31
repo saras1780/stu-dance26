@@ -55,6 +55,15 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- Conteneur pour centrer le bouton -->
+                <div class="flex justify-center items-center mt-8">
+                    <NuxtLink
+                        to="/"
+                        class="bg-[#592F83] text-white py-2 px-6 rounded-lg hover:bg-[#391B49] transition"
+                    >
+                        Retour vers l'accueil
+                    </NuxtLink>
+                </div>
             </div>
         </section>
     </Layout>

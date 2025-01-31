@@ -39,15 +39,15 @@
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-semibold mb-6">Nos Cours</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <NuxtLink to="/enfants" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
+            <NuxtLink to="cours/enfants" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
                 <h3 class="text-2xl font-bold mb-4">Enfants</h3>
                 <p>Des cours ludiques adaptés aux plus jeunes.</p>
             </NuxtLink>
-            <NuxtLink to="/ados" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
+            <NuxtLink to="cours/ados" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
                 <h3 class="text-2xl font-bold mb-4">Adolescents</h3>
                 <p>Des cours dynamiques adaptés aux jeunes danseurs.</p>
             </NuxtLink>
-            <NuxtLink to="/adultes" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
+            <NuxtLink to="cours/adultes" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
                 <h3 class="text-2xl font-bold mb-4">Adultes</h3>
                 <p>Des ateliers et cours de différents styles.</p>
             </NuxtLink>
@@ -78,7 +78,7 @@
                         <h3 class="text-2xl font-bold mb-4">Découverte</h3>
                         <p class="mb-4">Accès à 1 cours par semaine</p>
                         <p class="text-lg font-bold mb-4">30€/mois</p>
-                        <NuxtLink to="/registration"
+                        <NuxtLink to="/inscription"
                             class="bg-[#592F83] text-white py-2 px-6 rounded-lg hover:bg-[#391B49] transition">
                             S'inscrire
                         </NuxtLink>
@@ -89,7 +89,7 @@
                         <h3 class="text-2xl font-bold mb-4">Classique</h3>
                         <p class="mb-4">Accès à 3 cours par semaine</p>
                         <p class="text-lg font-bold mb-4">60€/mois</p>
-                        <NuxtLink to="/registration"
+                        <NuxtLink to="/inscription"
                             class="bg-[#592F83] text-white py-2 px-6 rounded-lg hover:bg-[#391B49] transition">
                             S'inscrire
                         </NuxtLink>
@@ -100,7 +100,7 @@
                         <h3 class="text-2xl font-bold mb-4">Illimité</h3>
                         <p class="mb-4">Accès illimité à tous les cours</p>
                         <p class="text-lg font-bold mb-4">90€/mois</p>
-                        <NuxtLink to="/registration"
+                        <NuxtLink to="/inscription"
                             class="bg-[#592F83] text-white py-2 px-6 rounded-lg hover:bg-[#391B49] transition">
                             S'inscrire
                         </NuxtLink>
