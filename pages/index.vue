@@ -1,5 +1,6 @@
 <template>
     <Layout>
+
         <!-- Welcome Section -->
         <section class="text-center py-12">
             <h1 class="text-4xl font-bold mb-4">Bienvenue chez Stu'dance 26</h1>
@@ -32,6 +33,28 @@
                 </p>
             </div>
         </section>
+
+        <!-- Presentation of Courses -->
+<section class="py-12">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-6">Nos Cours</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <NuxtLink to="/enfants" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
+                <h3 class="text-2xl font-bold mb-4">Enfants</h3>
+                <p>Des cours ludiques adaptés aux plus jeunes.</p>
+            </NuxtLink>
+            <NuxtLink to="/ados" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
+                <h3 class="text-2xl font-bold mb-4">Adolescents</h3>
+                <p>Des cours dynamiques adaptés aux jeunes danseurs.</p>
+            </NuxtLink>
+            <NuxtLink to="/adultes" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
+                <h3 class="text-2xl font-bold mb-4">Adultes</h3>
+                <p>Des ateliers et cours de différents styles.</p>
+            </NuxtLink>
+        </div>
+    </div>
+</section>
+
 
         <!-- Agenda Section -->
         <section class="py-12">
@@ -83,6 +106,37 @@
                         </NuxtLink>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-6">Témoignages</h2>
+                <blockquote class="italic text-lg">"Une école de danse incroyable où l'on progresse tout en s'amusant !" - Emma</blockquote>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-12 bg-[#D1CCDC] text-[#0D0E20] rounded-lg">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-6">FAQ</h2>
+                <details class="mb-4">
+                    <summary class="text-xl font-bold cursor-pointer">Quels sont les horaires des cours ?</summary>
+                    <p class="mt-2">Nos cours sont disponibles du lundi au samedi, consultez la page "Horaires".</p>
+                </details>
+                <details class="mb-4">
+                    <summary class="text-xl font-bold cursor-pointer">Comment s'inscrire ?</summary>
+                    <p class="mt-2">Vous pouvez vous inscrire directement sur notre site via la page "Inscriptions".</p>
+                </details>
+                <details class="mb-4">
+                    <summary class="text-xl font-bold cursor-pointer">Est-ce que c'est sympa ?</summary>
+                    <p class="mt-2">Oui de ouf, venez!</p>
+                </details>
+                <details class="mb-4">
+                    <summary class="text-xl font-bold cursor-pointer">Comment s'inscrire ?</summary>
+                    <p class="mt-2">Vous pouvez vous inscrire directement sur notre site via la page "Inscriptions".</p>
+                </details>
             </div>
         </section>
     </Layout>
