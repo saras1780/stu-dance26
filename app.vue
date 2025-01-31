@@ -50,8 +50,8 @@
       <div class="container mx-auto text-center px-6">
         <p class="mb-4">&copy; 2025 Stu'dance 26 - Tous droits réservés.</p>
         <div class="flex justify-center gap-6 mb-4">
-          <a href="https://facebook.com" target="_blank" class="hover:text-accent">Facebook</a>
-          <a href="https://instagram.com" target="_blank" class="hover:text-accent">Instagram</a>
+          <a href="https://www.facebook.com/search/top?q=stu%27dance26&locale=fr_FR" target="_blank" class="hover:text-accent">Facebook</a>
+          <a href="https://www.instagram.com/stu_dance26/" target="_blank" class="hover:text-accent">Instagram</a>
         </div>
         <div>
           <a href="/mentions-legales" class="hover:text-accent">Mentions légales</a> |
