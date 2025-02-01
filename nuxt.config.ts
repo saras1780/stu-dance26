@@ -4,4 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
   css: ['@/assets/css/tailwind.css'],
+  app : {
+    head: {
+      title: "Stu'Dance 26",
+      link: [
+        {rel: "icon", type: "image/jpeg", href:"/images/logo.jpeg"}
+      ]
+    }
+  }
 })
