@@ -26,16 +26,25 @@
   </section>
     <!-- Gallery Section -->
         <section class="py-12">
-            <h2 class="text-3xl font-semibold text-center mb-6">Moments forts de Stu'dance 26</h2>
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-                <img src="public/images/gallery1.jpg" alt="Spectacle"
-                    class="rounded-lg shadow-md hover:shadow-xl transition" />
-                <img src="public/images/gallery2.jpg" alt="Représentation"
-                    class="rounded-lg shadow-md hover:shadow-xl transition" />
-                <img src="public/images/gallery3.jpg" alt="Évènement"
-                    class="rounded-lg shadow-md hover:shadow-xl transition" />
-            </div>
-        </section>
+    <h2 class="text-3xl font-semibold text-center mb-6">Moments forts de Stu'dance 26</h2>
+    <div class="container mx-auto">
+      <Swiper
+        :modules="[Autoplay, Navigation, Pagination]"
+        :slides-per-view="1"
+        :space-between="20"
+        :loop="true"
+        :pagination="{ clickable: true }"
+        :navigation="true"
+        :autoplay="{ delay: 3000, disableOnInteraction: false }"
+        class="w-full md:w-3/4 mx-auto"
+      >
+        <SwiperSlide v-for="(image, index) in galleryImages" :key="index">
+          <img :src="image" class="rounded-lg shadow-md hover:shadow-xl transition w-full object-cover h-[400px] md:h-[500px]" />
+
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  </section>
 
         <!-- Values Section -->
         <section class="py-12 bg-[#D1CCDC] text-[#0D0E20] rounded-lg">
@@ -152,7 +161,23 @@
 </template>
 
 <script setup>
-// Ajout d'animations via Framer Motion ou autre si besoin
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+const galleryImages = [
+  "/images/gallery1.jpg",
+  "/images/gallery2.jpg",
+  "/images/gallery3.jpg",
+  "/images/gallery4.jpg",
+  "/images/gallery5.jpg",
+  "/images/gallery6.jpg",
+  "/images/gallery7.jpg",
+  "/images/gallery8.jpg",
+]
+
 </script>
 
 <style>

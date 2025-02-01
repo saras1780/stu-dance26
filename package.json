@@ -16,6 +16,7 @@
     "@fullcalendar/timegrid": "^6.1.15",
     "@fullcalendar/vue3": "^6.1.15",
     "nuxt": "^3.15.3",
+    "swiper": "^11.2.2",
     "vue": "latest",
     "vue-router": "latest"
   },
