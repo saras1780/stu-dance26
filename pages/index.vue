@@ -147,10 +147,6 @@
                     <summary class="text-xl font-bold cursor-pointer">Est-ce que c'est sympa ?</summary>
                     <p class="mt-2">Oui de ouf, venez!</p>
                 </details>
-                <details class="mb-4">
-                    <summary class="text-xl font-bold cursor-pointer">Comment s'inscrire ?</summary>
-                    <p class="mt-2">Vous pouvez vous inscrire directement sur notre site via la page "Inscriptions".</p>
-                </details>
             </div>
         </section>
 </template>
