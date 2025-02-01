@@ -1,24 +1,38 @@
 <template>
-    <Layout>
-
-        <!-- Welcome Section -->
-        <section class="text-center py-12">
-            <h1 class="text-4xl font-bold mb-4">Bienvenue chez Stu'dance 26</h1>
-            <p class="text-lg mb-8">Découvrez une école de danse qui valorise passion, engagement et créativité.</p>
-            <NuxtLink to="/apropos" class="bg-[#592F83] text-white py-3 px-8 rounded-lg hover:bg-[#391B49] transition">
-                En savoir plus sur nous
-            </NuxtLink>
-        </section>
-
-        <!-- Gallery Section -->
+  <section class="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-900 to-black text-white overflow-hidden">
+    <!-- Background overlay with motion effect -->
+    <div class="absolute inset-0 bg-[url('/images/dance-bg.jpg')] bg-cover bg-center opacity-20 animate-pulse"></div>
+    
+    <!-- Main Content -->
+    <div class="relative z-10 text-center max-w-4xl px-6">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-wider uppercase animate-fade-in">
+        Bienvenue chez <span class="text-purple-400">Stu'dance 26</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-2xl font-light tracking-wide animate-slide-up">
+        Des cours de danse pour <span class="text-purple-300 font-semibold">tous les âges</span> et tous les styles.
+      </p>
+      
+      <!-- Call to action buttons -->
+      <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-4 animate-bounce">
+        <a href="/inscription" class="px-6 py-3 bg-purple-500 hover:bg-purple-700 text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300">
+          Inscription
+        </a>
+        <a href="/horaire-et-calendrier" class="px-6 py-3 border-2 border-purple-500 hover:bg-purple-500 text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300">
+          Voir les horaires
+        </a>
+      </div>
+    </div>
+    
+  </section>
+    <!-- Gallery Section -->
         <section class="py-12">
             <h2 class="text-3xl font-semibold text-center mb-6">Moments forts de Stu'dance 26</h2>
             <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-                <img src="/images/gallery1.jpg" alt="Spectacle"
+                <img src="public/images/gallery1.jpg" alt="Spectacle"
                     class="rounded-lg shadow-md hover:shadow-xl transition" />
-                <img src="/images/gallery2.jpg" alt="Représentation"
+                <img src="public/images/gallery2.jpg" alt="Représentation"
                     class="rounded-lg shadow-md hover:shadow-xl transition" />
-                <img src="/images/gallery3.jpg" alt="Évènement"
+                <img src="public/images/gallery3.jpg" alt="Évènement"
                     class="rounded-lg shadow-md hover:shadow-xl transition" />
             </div>
         </section>
@@ -139,5 +153,34 @@
                 </details>
             </div>
         </section>
-    </Layout>
 </template>
+
+<script setup>
+// Ajout d'animations via Framer Motion ou autre si besoin
+</script>
+
+<style>
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 1s ease-out 0.3s both;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+</style>
