@@ -13,7 +13,7 @@
       </p>
       
       <!-- Call to action buttons -->
-      <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-4 animate-bounce">
+      <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-4 animate-slide-in">
         <a href="/inscription" class="px-6 py-3 bg-purple-500 hover:bg-purple-700 text-white rounded-full text-lg font-semibold shadow-lg transition-all duration-300">
           Inscription
         </a>
@@ -204,4 +204,19 @@ const galleryImages = [
 .animate-bounce {
   animation: bounce 1.5s infinite;
 }
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Départ depuis le bas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.8s ease-out both;
+}
+
 </style>
