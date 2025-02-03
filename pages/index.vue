@@ -62,21 +62,34 @@
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-semibold mb-6">Nos Cours</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <NuxtLink to="cours/enfants" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
-                <h3 class="text-2xl font-bold mb-4">Enfants</h3>
-                <p>Des cours ludiques adaptés aux plus jeunes.</p>
+            <NuxtLink to="cours/enfants" class="p-6 rounded-lg shadow-md hover:shadow-lg transition block bg-cover bg-center text-white flex flex-col justify-between h-full"
+                style="background-image: url('/images/background.png');">
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg h-full flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold mb-4">Enfants</h3>
+                    <p>Des cours ludiques adaptés aux plus jeunes.</p>
+                </div>
             </NuxtLink>
-            <NuxtLink to="cours/ados" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
-                <h3 class="text-2xl font-bold mb-4">Adolescents</h3>
-                <p>Des cours dynamiques adaptés aux jeunes danseurs.</p>
+
+            <NuxtLink to="cours/ados" class="p-6 rounded-lg shadow-md hover:shadow-lg transition block bg-cover bg-center text-white flex flex-col justify-between h-full"
+                style="background-image: url('/images/background.png');">
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg h-full flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold mb-4">Adolescents</h3>
+                    <p>Des cours dynamiques adaptés aux jeunes danseurs.</p>
+                </div>
             </NuxtLink>
-            <NuxtLink to="cours/adultes" class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition block">
-                <h3 class="text-2xl font-bold mb-4">Adultes</h3>
-                <p>Des ateliers et cours de différents styles.</p>
+
+            <NuxtLink to="cours/adultes" class="p-6 rounded-lg shadow-md hover:shadow-lg transition block bg-cover bg-center text-white flex flex-col justify-between h-full"
+                style="background-image: url('/images/background.png');">
+                <div class="bg-black bg-opacity-30 p-6 rounded-lg h-full flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold mb-4">Adultes</h3>
+                    <p>Des ateliers et cours de différents styles.</p>
+                </div>
             </NuxtLink>
         </div>
     </div>
 </section>
+
+
 
 
         <!-- Agenda Section -->
