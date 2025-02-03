@@ -139,23 +139,35 @@
         <section class="mt-10 flex gap-6">
     <!-- Colonne 1 : Calendrier -->
     <div class="w-1/2">
-        <h1 class="text-3xl font-bold mb-4 text-primary">Événements</h1>
+        <h1 class="text-3xl font-bold mb-4 text-primary">Calendrier</h1>
         <FullCalendar :options="calendarOptions" />
     </div>
 
     <!-- Colonne 2 : Liste des événements -->
     <div class="w-1/2 space-y-6">
-        <h2 class="text-2xl font-bold mb-4">Liste des événements</h2>
+        <h2 class="text-3xl font-bold mb-4 text-primary">Liste des événements</h2>
         <div class="relative p-4 border-l-4 border-primary shadow-md bg-white rounded-lg">
             <div class="absolute right-4 top-4 text-primary font-bold">27 FÉVRIER</div>
-            <h2 class="text-xl font-semibold text-primary">Birthday workshop</h2>
+            <h2 class="text-xl font-semibold text-primary">Workshop</h2>
             <p class="text-gray-600 text-sm">Un workshop GRATUIT à l'occasion de l'anniversaire de Fiona, la directrice du studio.</p>
             <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
         </div>
         <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
             <div class="absolute right-4 top-4 text-secondary font-bold">29 MARS</div>
-            <h2 class="text-xl font-semibold text-secondary">Workshop Hip-hop</h2>
-            <p class="text-gray-600 text-sm">Worskhop de danse.</p>
+            <h2 class="text-xl font-semibold text-secondary">Workshop</h2>
+            <p class="text-gray-600 text-sm">Worskhop de Hip-Hop et d'Afro.</p>
+            <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
+        </div>
+        <div class="relative p-4 border-l-4 border-primary shadow-md bg-white rounded-lg">
+            <div class="aabsolute right-4 top-4 text-primary font-bold">5 AVRIL</div>
+            <h2 class="text-xl font-semibold text-primary">Workshop</h2>
+            <p class="text-gray-600 text-sm">Worskhop de Hip-Hop et Girly</p>
+            <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
+        </div>
+        <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
+            <div class="absolute right-4 top-4 text-secondary font-bold">6 JUIN</div>
+            <h2 class="text-xl font-semibold text-secondary">Spectacle</h2>
+            <p class="text-gray-600 text-sm">Spectacle au centre culturel de Huy.</p>
             <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
         </div>
     </div>
@@ -178,8 +190,10 @@ export default {
             plugins: [dayGridPlugin],
             initialView: 'dayGridMonth',
             events: [
-                { title: 'Birthday Workshop', start: '2025-02-27', color: '#592F83' },
-                { title: 'Workshop Hip-Hop', start: '2025-03-29', color: '#E91E63' }
+                { title: 'Workshop', start: '2025-02-27', color: '#592F83' },
+                { title: 'Workshop', start: '2025-03-29', color: '#E91E63' },
+                { title: 'Workshop', start: '2025-04-05', color: '#592F83' },
+                { title: 'Spectacle', start: '2025-06-06', color: '#E91E63' }
             ]
         }
     };
