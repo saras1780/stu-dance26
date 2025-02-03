@@ -150,25 +150,25 @@
             <div class="absolute right-4 top-4 text-primary font-bold">27 FÉVRIER</div>
             <h2 class="text-xl font-semibold text-primary">Workshop</h2>
             <p class="text-gray-600 text-sm">Un workshop GRATUIT à l'occasion de l'anniversaire de Fiona, la directrice du studio.</p>
-            <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
+            <a href="evenements/workshop1" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
         </div>
         <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
             <div class="absolute right-4 top-4 text-secondary font-bold">29 MARS</div>
             <h2 class="text-xl font-semibold text-secondary">Workshop</h2>
             <p class="text-gray-600 text-sm">Worskhop de Hip-Hop et d'Afro.</p>
-            <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
+            <a href="evenements/workshop2" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
         </div>
         <div class="relative p-4 border-l-4 border-primary shadow-md bg-white rounded-lg">
             <div class="aabsolute right-4 top-4 text-primary font-bold">5 AVRIL</div>
             <h2 class="text-xl font-semibold text-primary">Workshop</h2>
             <p class="text-gray-600 text-sm">Worskhop de Hip-Hop et Girly</p>
-            <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
+            <a href="evenements/workshop3" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
         </div>
         <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
             <div class="absolute right-4 top-4 text-secondary font-bold">6 JUIN</div>
             <h2 class="text-xl font-semibold text-secondary">Spectacle</h2>
             <p class="text-gray-600 text-sm">Spectacle au centre culturel de Huy.</p>
-            <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
+            <a href="evenements/spectacle" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
         </div>
     </div>
 </section>
