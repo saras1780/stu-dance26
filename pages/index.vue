@@ -25,28 +25,28 @@
     
   </section>
     <!-- Gallery Section -->
-        <section class="py-12">
-    <h2 class="text-3xl font-semibold text-center mb-6">Moments forts de Stu'dance 26</h2>
-    <div class="container mx-auto">
-      <Swiper
-        :modules="[Autoplay, Navigation, Pagination]"
-        :slides-per-view="1"
-        :space-between="20"
-        :loop="true"
-        :pagination="{ clickable: true }"
-        :navigation="true"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }"
-        class="w-full md:w-3/4 mx-auto"
-      >
-        <SwiperSlide v-for="(image, index) in galleryImages" :key="index">
-          <img :src="image" class="rounded-lg shadow-md hover:shadow-xl transition w-full object-cover h-[400px] md:h-[500px]" />
+          <section class="py-12">
+            <h2 class="text-3xl font-semibold text-center mb-6">Moments forts de Stu'dance 26</h2>
+              <div class="container mx-auto">
+                <Swiper
+                  :modules="[Autoplay, Navigation, Pagination]"
+                  :slides-per-view="1"
+                  :space-between="20"
+                  :loop="true"
+                  :pagination="{ clickable: true }"
+                  :navigation="true"
+                  :autoplay="{ delay: 3000, disableOnInteraction: false }"
+                  class="w-full md:w-3/4 mx-auto"
+                >
+                  <SwiperSlide v-for="(image, index) in galleryImages" :key="index">
+                    <img :src="image" class="rounded-lg shadow-md hover:shadow-xl transition w-full object-cover h-[400px] md:h-[500px]" />
 
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  </section>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+        </section>
 
-        <!-- Values Section -->
+      <!-- Valeurs Section -->
         <section class="py-12 bg-[#D1CCDC] text-[#0D0E20] rounded-lg">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-semibold mb-6">Nos valeurs</h2>
@@ -57,40 +57,37 @@
             </div>
         </section>
 
-        <!-- Presentation of Courses -->
-<section class="py-12">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-semibold mb-6">Nos Cours</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <NuxtLink to="cours/enfants" class="p-6 rounded-lg shadow-md hover:shadow-lg transition block bg-cover bg-center text-white flex flex-col justify-between h-full"
-                style="background-image: url('/images/background.png');">
-                <div class="bg-black bg-opacity-30 p-6 rounded-lg h-full flex flex-col justify-center">
-                    <h3 class="text-2xl font-bold mb-4">Enfants</h3>
-                    <p>Des cours ludiques adaptés aux plus jeunes.</p>
+      <!-- Présentation des cours section -->
+        <section class="py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-6">Nos Cours</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <NuxtLink to="cours/enfants" class="p-6 rounded-lg shadow-md hover:shadow-lg transition bg-cover bg-center text-white flex-col justify-between h-full"
+                        style="background-image: url('/images/background.png');">
+                        <div class="bg-black bg-opacity-15 p-6 rounded-lg h-full flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold mb-4">Enfants</h3>
+                            <p>Des cours ludiques adaptés aux plus jeunes.</p>
+                        </div>
+                    </NuxtLink>
+
+                    <NuxtLink to="cours/ados" class="p-6 rounded-lg shadow-md hover:shadow-lg transition bg-cover bg-center text-white flex-col justify-between h-full"
+                        style="background-image: url('/images/background.png');">
+                        <div class="bg-black bg-opacity-15 p-6 rounded-lg h-full flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold mb-4">Adolescents</h3>
+                            <p>Des cours dynamiques adaptés aux jeunes danseurs.</p>
+                        </div>
+                    </NuxtLink>
+
+                    <NuxtLink to="cours/adultes" class="p-6 rounded-lg shadow-md hover:shadow-lg transition bg-cover bg-center text-white flex-col justify-between h-full"
+                        style="background-image: url('/images/background.png');">
+                        <div class="bg-black bg-opacity-15 p-6 rounded-lg h-full flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold mb-4">Adultes</h3>
+                            <p>Des ateliers et cours de différents styles.</p>
+                        </div>
+                    </NuxtLink>
                 </div>
-            </NuxtLink>
-
-            <NuxtLink to="cours/ados" class="p-6 rounded-lg shadow-md hover:shadow-lg transition block bg-cover bg-center text-white flex flex-col justify-between h-full"
-                style="background-image: url('/images/background.png');">
-                <div class="bg-black bg-opacity-30 p-6 rounded-lg h-full flex flex-col justify-center">
-                    <h3 class="text-2xl font-bold mb-4">Adolescents</h3>
-                    <p>Des cours dynamiques adaptés aux jeunes danseurs.</p>
-                </div>
-            </NuxtLink>
-
-            <NuxtLink to="cours/adultes" class="p-6 rounded-lg shadow-md hover:shadow-lg transition block bg-cover bg-center text-white flex flex-col justify-between h-full"
-                style="background-image: url('/images/background.png');">
-                <div class="bg-black bg-opacity-30 p-6 rounded-lg h-full flex flex-col justify-center">
-                    <h3 class="text-2xl font-bold mb-4">Adultes</h3>
-                    <p>Des ateliers et cours de différents styles.</p>
-                </div>
-            </NuxtLink>
-        </div>
-    </div>
-</section>
-
-
-
+            </div>
+        </section>
 
         <!-- Agenda Section -->
         <section class="py-12">
@@ -104,7 +101,7 @@
             </div>
         </section>
 
-        <!-- Subscription Plans Section -->
+        <!-- Abonnements Section -->
         <section class="py-12">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-semibold mb-8">Formules d'abonnement</h2>
@@ -145,7 +142,8 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
+
+      <!-- Témoignages Section -->
         <section class="py-12">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-semibold mb-6">Témoignages</h2>
@@ -153,32 +151,19 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section class="py-12 bg-[#D1CCDC] text-[#0D0E20] rounded-lg">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-semibold mb-6">FAQ</h2>
-                <details class="mb-4">
-                    <summary class="text-xl font-bold cursor-pointer">Quels sont les horaires des cours ?</summary>
-                    <p class="mt-2">Nos cours sont disponibles du lundi au samedi, consultez la page "Horaires".</p>
-                </details>
-                <details class="mb-4">
-                    <summary class="text-xl font-bold cursor-pointer">Comment s'inscrire ?</summary>
-                    <p class="mt-2">Vous pouvez vous inscrire directement sur notre site via la page "Inscriptions".</p>
-                </details>
-                <details class="mb-4">
-                    <summary class="text-xl font-bold cursor-pointer">Est-ce que c'est sympa ?</summary>
-                    <p class="mt-2">Oui de ouf, venez!</p>
-                </details>
-            </div>
-        </section>
+
+      <!-- FAQ Section -->
+        <FaqAccordion />
+
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import FaqAccordion from "@/components/FaqAccordion.vue";
 
 const galleryImages = [
   "/images/gallery1.jpg",

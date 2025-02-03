@@ -134,8 +134,72 @@
             </table>
 
         </section>
+
+        <section class="mt-10">
+            <h1 class="text-3xl font-bold mb-4 text-primary">Événements</h1>
+            
+            <!-- Calendrier -->
+            <div class="mb-6">
+                <FullCalendar :options="calendarOptions" />
+            </div>
+            
+            <!-- Filtres -->
+            <div class="flex gap-4 justify-center mb-6">
+                <button class="px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white">Workshop</button>
+                <button class="px-4 py-2 border border-secondary text-secondary rounded-lg hover:bg-secondary hover:text-white">Conférence</button>
+                <button class="px-4 py-2 border border-accent text-accent rounded-lg hover:bg-accent hover:text-white">Meetup</button>
+            </div>
+            
+            <!-- Liste des événements -->
+            <div class="space-y-6">
+                <div class="relative p-4 border-l-4 border-primary shadow-md bg-white rounded-lg">
+                    <div class="absolute right-4 top-4 text-primary font-bold">26 JANVIER</div>
+                    <h2 class="text-xl font-semibold text-primary">Marketing Workshop #3</h2>
+                    <p class="text-gray-600 text-sm">Un atelier intensif pour les entrepreneurs.</p>
+                    <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
+                </div>
+                
+                <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
+                    <div class="absolute right-4 top-4 text-secondary font-bold">26 JANVIER</div>
+                    <h2 class="text-xl font-semibold text-secondary">Marketing Lecture #11</h2>
+                    <p class="text-gray-600 text-sm">Conférence sur les tendances du marketing.</p>
+                    <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
+                </div>
+                
+                <div class="relative p-4 border-l-4 border-accent shadow-md bg-white rounded-lg">
+                    <div class="absolute right-4 top-4 text-accent font-bold">26 JANVIER</div>
+                    <h2 class="text-xl font-semibold text-accent">Marketing Meetup #4</h2>
+                    <p class="text-gray-600 text-sm">Rencontrez des professionnels du secteur.</p>
+                    <a href="#" class="text-accent font-semibold mt-2 inline-block">En savoir plus</a>
+                </div>
+            </div>
+        </section>
     </Layout>
 </template>
+
+<script>
+import FullCalendar from '@fullcalendar/vue3';
+import dayGridPlugin from '@fullcalendar/daygrid';
+
+export default {
+    components: {
+        FullCalendar
+    },
+    data() {
+        return {
+            calendarOptions: {
+                plugins: [dayGridPlugin],
+                initialView: 'dayGridMonth',
+                events: [
+                    { title: 'Jazz Contemporain', start: '2024-02-15', color: '#E91E63' },
+                    { title: 'Hip-Hop', start: '2024-02-20', color: '#3F51B5' },
+                    { title: 'Ragga', start: '2024-02-25', color: '#009688' }
+                ]
+            }
+        };
+    }
+};
+</script>
 
 <style>
 /* Couleur pour les lignes des jours */
@@ -148,4 +212,11 @@
     border-color: #592F83;
     /* Accent */
 }
+.text-primary { color: #592F83; }
+.border-primary { border-color: #592F83; }
+.text-secondary { color: #E91E63; }
+.border-secondary { border-color: #E91E63; }
+.text-accent { color: #03A9F4; }
+.border-accent { border-color: #03A9F4; }
+
 </style>
