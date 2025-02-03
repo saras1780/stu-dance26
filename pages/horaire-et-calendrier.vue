@@ -74,7 +74,8 @@
                         <td class="border border-secondary p-2">Hip-Hop - Fiona</td>
                         <td class="border border-secondary p-2">Adultes</td>
                         <td class="border border-secondary p-2">20h-21h</td>
-                    </tr><!-- ------------------------------ VENDREDI ------------------------------ -->
+                    </tr>
+                    <!-- ------------------------------ VENDREDI ------------------------------ -->
                     <tr class="bg-accent-light text-black font-bold">
                         <td class="border border-secondary p-2">Vendredi</td>
                         <td class="border border-secondary"></td>
@@ -135,45 +136,31 @@
 
         </section>
 
-        <section class="mt-10">
-            <h1 class="text-3xl font-bold mb-4 text-primary">Événements</h1>
-            
-            <!-- Calendrier -->
-            <div class="mb-6">
-                <FullCalendar :options="calendarOptions" />
-            </div>
-            
-            <!-- Filtres -->
-            <div class="flex gap-4 justify-center mb-6">
-                <button class="px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white">Workshop</button>
-                <button class="px-4 py-2 border border-secondary text-secondary rounded-lg hover:bg-secondary hover:text-white">Conférence</button>
-                <button class="px-4 py-2 border border-accent text-accent rounded-lg hover:bg-accent hover:text-white">Meetup</button>
-            </div>
-            
-            <!-- Liste des événements -->
-            <div class="space-y-6">
-                <div class="relative p-4 border-l-4 border-primary shadow-md bg-white rounded-lg">
-                    <div class="absolute right-4 top-4 text-primary font-bold">26 JANVIER</div>
-                    <h2 class="text-xl font-semibold text-primary">Marketing Workshop #3</h2>
-                    <p class="text-gray-600 text-sm">Un atelier intensif pour les entrepreneurs.</p>
-                    <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
-                </div>
-                
-                <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
-                    <div class="absolute right-4 top-4 text-secondary font-bold">26 JANVIER</div>
-                    <h2 class="text-xl font-semibold text-secondary">Marketing Lecture #11</h2>
-                    <p class="text-gray-600 text-sm">Conférence sur les tendances du marketing.</p>
-                    <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
-                </div>
-                
-                <div class="relative p-4 border-l-4 border-accent shadow-md bg-white rounded-lg">
-                    <div class="absolute right-4 top-4 text-accent font-bold">26 JANVIER</div>
-                    <h2 class="text-xl font-semibold text-accent">Marketing Meetup #4</h2>
-                    <p class="text-gray-600 text-sm">Rencontrez des professionnels du secteur.</p>
-                    <a href="#" class="text-accent font-semibold mt-2 inline-block">En savoir plus</a>
-                </div>
-            </div>
-        </section>
+        <section class="mt-10 flex gap-6">
+    <!-- Colonne 1 : Calendrier -->
+    <div class="w-1/2">
+        <h1 class="text-3xl font-bold mb-4 text-primary">Événements</h1>
+        <FullCalendar :options="calendarOptions" />
+    </div>
+
+    <!-- Colonne 2 : Liste des événements -->
+    <div class="w-1/2 space-y-6">
+        <h2 class="text-2xl font-bold mb-4">Liste des événements</h2>
+        <div class="relative p-4 border-l-4 border-primary shadow-md bg-white rounded-lg">
+            <div class="absolute right-4 top-4 text-primary font-bold">27 FÉVRIER</div>
+            <h2 class="text-xl font-semibold text-primary">Birthday workshop</h2>
+            <p class="text-gray-600 text-sm">Un workshop GRATUIT à l'occasion de l'anniversaire de Fiona, la directrice du studio.</p>
+            <a href="#" class="text-primary font-semibold mt-2 inline-block">En savoir plus</a>
+        </div>
+        <div class="relative p-4 border-l-4 border-secondary shadow-md bg-white rounded-lg">
+            <div class="absolute right-4 top-4 text-secondary font-bold">29 MARS</div>
+            <h2 class="text-xl font-semibold text-secondary">Workshop Hip-hop</h2>
+            <p class="text-gray-600 text-sm">Worskhop de danse.</p>
+            <a href="#" class="text-secondary font-semibold mt-2 inline-block">En savoir plus</a>
+        </div>
+    </div>
+</section>
+
     </Layout>
 </template>
 
@@ -215,7 +202,6 @@ export default {
 .text-primary { color: #592F83; }
 .border-primary { border-color: #592F83; }
 .text-secondary { color: #E91E63; }
-.border-secondary { border-color: #E91E63; }
 .text-accent { color: #03A9F4; }
 .border-accent { border-color: #03A9F4; }
 
