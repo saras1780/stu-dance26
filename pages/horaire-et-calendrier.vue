@@ -173,18 +173,18 @@ export default {
         FullCalendar
     },
     data() {
-        return {
-            calendarOptions: {
-                plugins: [dayGridPlugin],
-                initialView: 'dayGridMonth',
-                events: [
-                    { title: 'Jazz Contemporain', start: '2024-02-15', color: '#E91E63' },
-                    { title: 'Hip-Hop', start: '2024-02-20', color: '#3F51B5' },
-                    { title: 'Ragga', start: '2024-02-25', color: '#009688' }
-                ]
-            }
-        };
-    }
+    return {
+        calendarOptions: {
+            plugins: [dayGridPlugin],
+            initialView: 'dayGridMonth',
+            events: [
+                { title: 'Birthday Workshop', start: '2025-02-27', color: '#592F83' },
+                { title: 'Workshop Hip-Hop', start: '2025-03-29', color: '#E91E63' }
+            ]
+        }
+    };
+}
+
 };
 </script>
 
