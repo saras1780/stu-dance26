@@ -46,17 +46,6 @@
               </div>
         </section>
 
-      <!-- Valeurs Section -->
-        <section class="py-12 bg-[#D1CCDC] text-[#0D0E20] rounded-lg">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-semibold mb-6">Nos valeurs</h2>
-                <p class="text-lg leading-relaxed">
-                    À Stu'dance 26, nous croyons en l'expression personnelle, le dépassement de soi et la force de la
-                    communauté. Rejoignez une école où chaque élève est libre de briller à sa façon.
-                </p>
-            </div>
-        </section>
-
       <!-- Présentation des cours section -->
         <section class="py-12">
             <div class="container mx-auto text-center">
@@ -89,19 +78,53 @@
             </div>
         </section>
 
-        <!-- Agenda Section -->
-        <section class="py-12">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-semibold text-center mb-6">Agenda</h2>
-                <ul class="list-disc list-inside text-lg">
-                    <li class="mb-4">15 février 2025 : Atelier spécial danse contemporaine</li>
-                    <li class="mb-4">10 avril 2025 : Stage intensif de hip-hop</li>
-                    <li class="mb-4">20 juin 2025 : Spectacle annuel "Les étoiles de la danse"</li>
-                </ul>
+      <!-- Valeurs Section -->
+        <section class="py-12 bg-[#D1CCDC] text-[#0D0E20] rounded-lg">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-6">Nos valeurs</h2>
+                <p class="text-lg leading-relaxed">
+                    À Stu'dance 26, nous croyons en l'expression personnelle, le dépassement de soi et la force de la
+                    communauté. Rejoignez une école où chaque élève est libre de briller à sa façon.
+                </p>
             </div>
         </section>
 
-        <!-- Abonnements Section -->
+      <!-- Agenda Section -->
+        <section class="py-12">
+          <div class="container mx-auto">
+              <h2 class="text-3xl font-semibold text-center mb-6">Agenda</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <!-- Carte d'événement -->
+                  <div class="border-2 border-purple-950 rounded-lg p-4 text-center shadow-lg">
+                      <p class="text-xl font-bold text-purple-950">15 février 2025</p>
+                      <hr class="border-t-2 border-purple-950 my-2">
+                      <p class="text-lg">Atelier spécial danse contemporaine</p>
+                  </div>
+                  <div class="border-2 border-purple-950 rounded-lg p-4 text-center shadow-lg">
+                      <p class="text-xl font-bold text-purple-950">10 avril 2025</p>
+                      <hr class="border-t-2 border-purple-950 my-2">
+                      <p class="text-lg">Stage intensif de hip-hop</p>
+                  </div>
+                  <div class="border-2 border-purple-950 rounded-lg p-4 text-center shadow-lg">
+                      <p class="text-xl font-bold text-purple-950">20 juin 2025</p>
+                      <hr class="border-t-2 border-purple-950 my-2">
+                      <p class="text-lg">Spectacle annuel "Les étoiles de la danse"</p>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+
+      <!-- Témoignages Section -->
+        <section class="py-12">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-6">Témoignages</h2>
+                <blockquote class="italic text-lg">"Une école de danse incroyable où l'on progresse tout en s'amusant !" - Emma</blockquote>
+            </div>
+        </section>
+
+
+      <!-- Abonnements Section -->
         <section class="py-12">
             <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-semibold mb-8">Formules d'abonnement</h2>
@@ -139,15 +162,6 @@
                         </NuxtLink>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-      <!-- Témoignages Section -->
-        <section class="py-12">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-semibold mb-6">Témoignages</h2>
-                <blockquote class="italic text-lg">"Une école de danse incroyable où l'on progresse tout en s'amusant !" - Emma</blockquote>
             </div>
         </section>
 
